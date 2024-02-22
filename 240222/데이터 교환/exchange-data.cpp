@@ -10,7 +10,7 @@ int main() {
     int temp = a;
     a = c;
     c = b;
-    c = temp;
+    b = temp;
 
     cout << a << endl;
     cout << b << endl;
