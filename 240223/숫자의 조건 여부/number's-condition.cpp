@@ -14,9 +14,9 @@ int main() {
     if(a >= 133) {
         cout << 1;
         return 0;
+    } else {
+        cout << 0;
     }
-
-    cout << 0;
 
     return 0;
 }
