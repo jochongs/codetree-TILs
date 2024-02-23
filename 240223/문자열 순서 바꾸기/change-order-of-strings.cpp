@@ -8,8 +8,8 @@ int main() {
 
     cin >> s >> t;
 
-    cout << s << endl;
     cout << t << endl;
+    cout << s << endl;
 
     return 0;
 }
