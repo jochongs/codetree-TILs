@@ -9,7 +9,11 @@ int main() {
 
     int a, b;
 
-    cout << a > b ? a : b;
+    cin >> a >> b;
+
+    int max = (a > b) ? a : b;
+
+    cout << max;
 
     return 0;
 }
