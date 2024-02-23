@@ -13,7 +13,11 @@ int main() {
     cin >> aMath >> bMath;
     cin >> aEng >> bEng;
 
-    cout << (aMath > bMath && aEng > bEng);
+    if (aMath > bMath && aEng > bEng) {
+        cout << 1;
+        return 0;
+    }
+    cout << 0;
 
     return 0;
 }
