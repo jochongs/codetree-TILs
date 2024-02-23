@@ -11,8 +11,8 @@ int main() {
 
     cin >> a >> b;
 
-    b += a;
     a += b;
+    b += a;
 
     cout << a << " " << b;
 
