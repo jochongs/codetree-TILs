@@ -12,7 +12,7 @@ int main() {
     cin >> a >> b >> c;
 
     int sum = a + b + c;
-    int avg = sum / 3
+    int avg = sum / 3;
 
     cout << sum << '\n';
     cout << avg << '\n';
