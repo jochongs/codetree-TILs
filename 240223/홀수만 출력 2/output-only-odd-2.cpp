@@ -9,9 +9,9 @@ int main() {
 
     int a, b;
 
-    cin >> a >> b;
+    cin >> b >> a;
 
-    for(int i = b; i <= a; i += 2) {
+    for(int i = b; i >= a; i -= 2) {
         cout << i << ' ';
     }
 
