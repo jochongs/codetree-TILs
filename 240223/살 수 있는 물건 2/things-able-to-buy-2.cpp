@@ -21,7 +21,7 @@ int main() {
     }
 
     if(money >= 500) {
-        cout << "500";
+        cout << "pen";
         return 0;
     }
 
