@@ -12,7 +12,7 @@ int main() {
     cin >> a >> b;
 
     if(a % 2 == 0) {
-        cout << "even";
+        cout << "even" << '\n';
     } else {
         cout << "odd" << '\n';
     }
