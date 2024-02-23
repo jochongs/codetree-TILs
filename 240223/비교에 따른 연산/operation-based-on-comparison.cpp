@@ -16,7 +16,7 @@ int main() {
         return 0;
     }
 
-    cout << b % a;
+    cout << b / a;
 
     return 0;
 }
