@@ -26,5 +26,6 @@ int main() {
         return 0;
     }
 
+    cout << "Vacancy";
     return 0;
 }
