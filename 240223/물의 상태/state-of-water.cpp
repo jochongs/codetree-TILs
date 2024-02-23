@@ -16,7 +16,12 @@ int main() {
         return 0;
     }
 
-    cout << "water";
+    if(temperature < 100) { 
+        cout << "water";
+        return;
+    }
+
+    cout << "vapor";
 
     return 0;
 }
