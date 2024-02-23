@@ -10,8 +10,8 @@ int main() {
     int aMath, bMath;
     int aEng, bEng;
 
-    cin >> aMath >> bMath;
-    cin >> aEng >> bEng;
+    cin >> aMath >> aEng;
+    cin >> bMath >> bEng;
 
     if (aMath > bMath && aEng > bEng) {
         cout << 1;
