@@ -13,9 +13,10 @@ int main() {
     
     if(n >= 80) {
         cout << "pass";
-    } else {
-        cout << "more score";
+        return 0;
     }
+
+    cout << n << " more score";
 
     return 0;
 }
