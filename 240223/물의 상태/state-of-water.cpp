@@ -18,7 +18,7 @@ int main() {
 
     if(temperature < 100) { 
         cout << "water";
-        return;
+        return 0;
     }
 
     cout << "vapor";
