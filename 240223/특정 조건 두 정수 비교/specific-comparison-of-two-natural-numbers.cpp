@@ -12,9 +12,9 @@ int main() {
     cin >> num1 >> num2;
 
     if(num1 < num2) {
-        cout << 1 << '\n';
+        cout << 1 << ' ';
     } else {
-        cout << 0 << '\n';
+        cout << 0 << ' ';
     }
 
     if(num1 == num2) {
