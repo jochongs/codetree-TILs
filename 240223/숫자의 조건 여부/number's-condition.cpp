@@ -11,7 +11,7 @@ int main() {
 
     cin >> a;
 
-    if(a >= 133) {
+    if(a >= 113) {
         cout << 1;
     } else {
         cout << 0;
