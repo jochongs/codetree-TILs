@@ -16,7 +16,7 @@ int main() {
         return 0;
     }
 
-    cout << 100 - n << " more score";
+    cout << 80 - n << " more score";
 
     return 0;
 }
