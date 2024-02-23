@@ -15,7 +15,7 @@ int main() {
         cout << "A";
     }
 
-    if(b % 2 == 0) {
+    if(a % 2 == 0) {
         cout << "B";
     }    
 
