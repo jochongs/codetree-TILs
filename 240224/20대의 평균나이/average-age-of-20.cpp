@@ -22,6 +22,8 @@ int main() {
         cnt++;
     }
 
+    cout << fixed;
+    cout.precision(2);
     cout << totalSum / double(cnt); 
 
     return 0;
