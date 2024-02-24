@@ -18,5 +18,7 @@ int main() {
         }
     }
 
+    cout << totalMultiple;
+
     return 0;
 }
