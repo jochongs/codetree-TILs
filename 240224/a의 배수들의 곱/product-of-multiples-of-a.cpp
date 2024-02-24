@@ -12,7 +12,7 @@ int main() {
     cin >> a >> b;
 
     int totalMultiple = 1;
-    for (int i = i; i <= b; i++) {
+    for (int i = 1; i <= b; i++) {
         if (i % a == 0) {
             totalMultiple *= i;
         }
