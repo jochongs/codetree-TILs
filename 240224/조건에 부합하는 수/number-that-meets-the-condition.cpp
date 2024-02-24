@@ -20,7 +20,7 @@ int main() {
             continue;
         }
 
-        if (i / 7 < 4) {
+        if (i % 7 < 4) {
             continue;
         }
 
