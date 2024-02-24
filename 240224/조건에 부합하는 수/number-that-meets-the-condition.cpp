@@ -12,7 +12,7 @@ int main() {
     cin >> a;
 
     for (int i = 1; i <= a; i++) {
-        if (!(i % 2 == 0 && i % 4 != 0)) {
+        if (i % 2 == 0 && i % 4 != 0) {
             continue;
         }
 
