@@ -13,7 +13,9 @@ int main() {
 
     int totalSum = 0;
     for (int i = a; i <= b; i++ ) {
-        totalSum += i;
+        if (i % 6 == 0 && i % 8 != 0) {
+            totalSum += i;
+        }
     }
 
     cout << totalSum;
