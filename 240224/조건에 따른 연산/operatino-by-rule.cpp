@@ -29,7 +29,7 @@ int main() {
         }
     }
 
-    cout << n;
+    cout << cnt;
 
     return 0;
 }
