@@ -2,7 +2,7 @@
 using namespace std;
 
 bool cal(int number) {
-    if (1920 % number == 0 || 2880 % number == 0) {
+    if (1920 % number == 0 && 2880 % number == 0) {
         return true;
     }
 
