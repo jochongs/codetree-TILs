@@ -15,7 +15,7 @@ int main() {
     while (true) {
         if (n % 2 == 0) {
             n *= 3;
-            n++;
+            n += 1;
             continue;
         }
 
@@ -24,11 +24,13 @@ int main() {
 
         cnt++;
 
+        cout << n << ' ';
+
         if(n >= 1000) {
             break;
         }
     }
-
+    cout << '\n';
     cout << cnt;
 
     return 0;
