@@ -14,7 +14,7 @@ int main() {
 
         cin >> age;
 
-        if (age < 20) {
+        if (age < 20 || age >= 30) {
             break;
         }
 
