@@ -17,7 +17,7 @@ int main() {
             continue;
         }
 
-        if (i / 8 % == 2) {
+        if (i / 8 % 2 == 0) {
             continue;
         }
 
