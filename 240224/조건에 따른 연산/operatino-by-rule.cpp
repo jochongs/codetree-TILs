@@ -16,21 +16,17 @@ int main() {
         if (n % 2 == 0) {
             n *= 3;
             n += 1;
-            continue;
+        } else {
+            n *= 2;
+            n += 2;
         }
 
-        n *= 2;
-        n += 2;
-
         cnt++;
-
-        cout << n << ' ';
-
         if(n >= 1000) {
             break;
         }
     }
-    cout << '\n';
+
     cout << cnt;
 
     return 0;
