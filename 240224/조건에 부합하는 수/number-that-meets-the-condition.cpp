@@ -11,8 +11,7 @@ int main() {
 
     cin >> a;
 
-
-    for (int i = i; i <= a; i++) {
+    for (int i = 1; i <= a; i++) {
         if (!(i % 2 == 0 && i % 4 != 0)) {
             continue;
         }
