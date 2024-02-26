@@ -36,6 +36,8 @@ int main() {
         }   
     }
 
+    cout << fixed;
+    cout.precision(1);
     cout << totalSum << ' ' << double(totalSum) / cnt;
 
     return 0;
