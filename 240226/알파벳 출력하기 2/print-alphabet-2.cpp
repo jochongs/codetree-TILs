@@ -21,6 +21,12 @@ int main() {
         for (int j = 0; j < n - i; j++) {
             char alphabet = alphabetASCII;
             cout << alphabet << ' ';
+
+            if (alphabet == 'Z') {
+                alphabetASCII = 65;
+                continue;    
+            }
+            
             alphabetASCII++;
         }
 
