@@ -21,7 +21,7 @@ int main() {
     int sum = 0;
     int cnt = 0;
     for (int i = 2; i < 10; i += 3) {
-        sum = arr[i];
+        sum += arr[i];
         cnt ++;
     }
 
