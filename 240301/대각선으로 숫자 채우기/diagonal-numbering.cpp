@@ -7,7 +7,7 @@ int main() {
     cin.tie(NULL);
     cout.tie(NULL);
 
-    int n = 1, m = 6;
+    int n, m;
     cin >> n >> m;
 
     int arr[100][100] = {};
@@ -30,8 +30,16 @@ int main() {
             selectedColumn--;
         }
 
+        if (n == 1) {
+            column++;
+            continue;
+        }
+        if (m == 1) {
+            row ++;
+            continue;
+        }
         
-        if (i >= n - 1 && n != 1 && m != 1) {
+        if (i >= n - 1) {
             row++;
         } else {
             column++;
