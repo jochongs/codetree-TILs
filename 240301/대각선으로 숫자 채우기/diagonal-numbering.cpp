@@ -34,12 +34,13 @@ int main() {
             column++;
             continue;
         }
+
         if (m == 1) {
-            row ++;
+            row++;
             continue;
         }
         
-        if (i >= n - 1) {
+        if (i >= m - 1) {
             row++;
         } else {
             column++;
