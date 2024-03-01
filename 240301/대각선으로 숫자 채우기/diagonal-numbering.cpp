@@ -31,7 +31,7 @@ int main() {
         }
 
         
-        if (i >= n - 1) {
+        if (i >= n - 1 && n != 1) {
             row++;
         } else { 
             column++;
