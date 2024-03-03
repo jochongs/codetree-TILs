@@ -12,15 +12,8 @@ int main() {
 
     cin >> str >> num;
 
-    if (str.length() < num) {
-        for (int i = str.length() - 1; i >= 0; i--) {
-            cout << str[i];
-        }
-        return 0;
-    }
-
-    for (int i = str.length() - 1; i >= str.length() - num; i--) {
-        cout << str[i];    
+    for (int i = 0; i < num; i++) {
+        cout << str[str.length() - 1 - i];
     }
 
     return 0;
