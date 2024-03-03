@@ -12,8 +12,11 @@ int main() {
 
     cin >> str >> num;
 
-    for (int i = 0; i < num; i++) {
-        cout << str[str.length() - 1 - i];
+    for (int i = str.length() - 1; i >= 0; i--) {
+        if(str.length() - i > num) {
+            break;
+        }
+        cout << str[i];
     }
 
     return 0;
