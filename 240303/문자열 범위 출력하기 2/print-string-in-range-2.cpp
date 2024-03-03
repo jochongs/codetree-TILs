@@ -13,14 +13,14 @@ int main() {
     cin >> str >> num;
 
     if (str.length() < num) {
-        for (int i = str.length() - 1; i >= num; i--) {
-            cout << str[i];    
+        for (int i = str.length() - 1; i >= 0; i--) {
+            cout << str[i];
         }
         return 0;
     }
 
     for (int i = str.length() - 1; i >= str.length() - num; i--) {
-        cout << str[i];
+        cout << str[i];    
     }
 
     return 0;
