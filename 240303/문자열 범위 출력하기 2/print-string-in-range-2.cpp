@@ -13,7 +13,10 @@ int main() {
     cin >> str >> num;
 
     if (str.length() < num) {
-        num = str.length();
+        for (int i = str.length() - 1; i >= num; i--) {
+            cout << str[i];    
+        }
+        return 0;
     }
 
     for (int i = str.length() - 1; i >= str.length() - num; i--) {
