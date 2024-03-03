@@ -28,9 +28,7 @@ int main() {
     for (int i = 0; i < n; i++) {
         string str = strArr[i];
 
-        for (int j = 0; j < str.length(); j++) {
-            if (str[j] == 'a') cnt++;
-        }   
+        if (str[0] == 'a') cnt++;
     }
      
     cout << length << ' ' << cnt;
