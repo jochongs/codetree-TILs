@@ -5,20 +5,18 @@ int gcl(int n, int m) {
     int A = max(n, m);
     int B = min(n, m);
 
-    int R = 1;
     while (A % B != 0) {
-        R = A % B;
-
+        int R = A % B;
         A = B;
         B = R;
     }
 
-    return R;
+    return B;
 }
 
 int gcf(int n, int m) {
     int gclNum = gcl(n, m);
-    //cout << "GCL: " << gclNum << '\n';
+
     return (n / gclNum) * (m / gclNum) * gclNum;
 }
 
@@ -27,7 +25,7 @@ int main() {
     int n, m;   
     cin >> n >> m;
 
-    cout << gcf(27, 36);
+    cout << gcf(5, 5);
 
     return 0;
 }
