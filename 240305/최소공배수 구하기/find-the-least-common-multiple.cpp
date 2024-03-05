@@ -25,7 +25,7 @@ int main() {
     int n, m;   
     cin >> n >> m;
 
-    cout << gcf(5, 5);
+    cout << gcf(n, m);
 
     return 0;
 }
