@@ -31,7 +31,7 @@ int main() {
     // 여기에 코드를 작성해주세요.
     int arr[10][10] = {};
 
-    vector<string> strArr(3);
+    vector<string> strArr{"189", "167", "167"};
 
     for (auto &str:strArr) {
         cin >> str;
@@ -51,8 +51,7 @@ int main() {
 
     // 세로
     for  (int i = 0; i < 3; i++) {
-        string result = check(strArr[0][0], strArr[1][0], strArr[2][0]);
-
+        string result = check(strArr[0][i], strArr[1][i], strArr[2][i]);
         if (result == "00") {
             continue;
         }
@@ -81,9 +80,11 @@ int main() {
     int total = 0;
     for (int i = 0; i < 10; i++) {
         for (int j = 0; j < 10; j++) {
+            //cout << arr[i][j] << ' ';
             if (arr[i][j] == 0) continue; 
             total++;  
         }
+        //cout << '\n';
     }
     
     cout << total;
