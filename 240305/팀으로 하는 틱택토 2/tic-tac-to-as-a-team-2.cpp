@@ -44,7 +44,9 @@ int main() {
             continue;
         }
 
-        arr[int(result[0] - 49)][int(result[1] - 49)] = 1;
+        int A = min(int(result[0] - 49), int(result[1] - 49));
+        int B = max(int(result[1] - 49), int(result[1] - 49));
+        arr[A][B] = 1;
     }
 
     // 세로
@@ -55,18 +57,25 @@ int main() {
             continue;
         }
 
-        arr[int(result[0] - 49)][int(result[1] - 49)] = 1;
+        int A = min(int(result[0] - 49), int(result[1] - 49));
+        int B = max(int(result[1] - 49), int(result[1] - 49));
+        arr[A][B] = 1;
     }
 
     // 대각선 1
     string result1 = check(strArr[0][0], strArr[1][1], strArr[2][2]);
     if (result1 != "00") {
-        arr[int(result1[0] - 49)][int(result1[1] - 49)] = 1;
+        int A = min(int(result1[0] - 49), int(result1[1] - 49));
+        int B = max(int(result1[1] - 49), int(result1[1] - 49));
+        arr[A][B] = 1;
     }
 
+    // 대각선 2
     string result2 = check(strArr[2][0], strArr[1][1], strArr[0][2]);
     if (result2 != "00") {
-        arr[int(result2[0] - 49)][int(result2[1] - 49)] = 1;
+        int A = min(int(result2[0] - 49), int(result2[1] - 49));
+        int B = max(int(result2[1] - 49), int(result2[1] - 49));
+        arr[A][B] = 1;
     }
 
     int total = 0;
