@@ -18,7 +18,7 @@ int gcl(int n, int m) {
 
 int gcf(int n, int m) {
     int gclNum = gcl(n, m);
-
+    //cout << "GCL: " << gclNum << '\n';
     return (n / gclNum) * (m / gclNum) * gclNum;
 }
 
@@ -27,7 +27,7 @@ int main() {
     int n, m;   
     cin >> n >> m;
 
-    cout << gcf(n, m);
+    cout << gcf(27, 36);
 
     return 0;
 }
