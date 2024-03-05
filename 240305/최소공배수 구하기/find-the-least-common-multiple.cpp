@@ -1,37 +1,19 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int* divisor(int n, int& size) {
-    int* arr = new int[100];
-
-    int index = 0;
-    for (int i = 1; i <= n; i++) {
-        if (n % i != 0) continue;
-
-        arr[index] = i;
-        index++;
-    }
-
-    size = index;
-    return arr;
-}
-
 int gcl(int n, int m) {
-    int nSize = 0;
-    int mSize = 0;
-    int* nDivisor = divisor(n, nSize);
-    int* mDivisor = divisor(m, mSize);
+    int A = max(n, m);
+    int B = min(n, m);
 
-    int gcl = 1;
-    for (int i = 0; i < nSize; i++) {
-        for (int j = 0; j < mSize; j++) {
-            if (nDivisor[i] == mDivisor[j]) {
-                gcl = nDivisor[i];
-            }
-        }
+    int R = 1;
+    while (A % B != 0) {
+        R = A % B;
+
+        A = B;
+        B = R;
     }
 
-    return gcl;
+    return R;
 }
 
 int gcf(int n, int m) {
