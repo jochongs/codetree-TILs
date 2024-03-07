@@ -18,7 +18,7 @@ int main() {
     list<char>::iterator it = cipherList.end();
 
     for (int i = 0; i < m; i++) {
-        char command = ' ';
+        char command;
         cin >> command;
 
         if (command == 'L'){
@@ -35,18 +35,22 @@ int main() {
             it++;
         }
 
+        if (command == 'D') {
+            if (it == cipherList.end()) {
+                continue;
+            }
+            it = cipherList.erase(it);
+        }
+
         if (command == 'P') {
             char inputChar;
             cin >> inputChar;
             cipherList.insert(it, inputChar);
         }
+    }
 
-        if (command == 'D') {
-            if (it == cipherList.end()) {
-                continue;
-            }
-            cipherList.erase(it);
-        }
+    for (it = cipherList.begin(); it != cipherList.end(); it++) {
+        cout << *it;
     }
 
     return 0;
