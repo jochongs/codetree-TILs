@@ -49,9 +49,5 @@ int main() {
         }
     }
 
-    for (it = cipherList.begin(); it != cipherList.end(); it++) {
-        cout << *it;
-    }
-
     return 0;
 }
