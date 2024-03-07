@@ -42,6 +42,9 @@ int main() {
         }
 
         if (command == 'D') {
+            if (it == cipherList.end()) {
+                continue;
+            }
             cipherList.erase(it);
         }
     }
