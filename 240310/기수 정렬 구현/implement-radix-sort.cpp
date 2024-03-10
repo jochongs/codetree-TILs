@@ -17,6 +17,7 @@ void radix_sort(int arr[], int size, int k) {
     for (int i = 0; i < k; i++) {   
         int new_arr[10][100000] = {0, };
         int idx_arr[10] = {0, };
+        
         for (int j = 0; j < size; j++) {
             int num = arr[j] % square(10, i + 1) / square(10, i);
 
@@ -50,7 +51,7 @@ int main() {
         cin >> arr[i];
     }
 
-    radix_sort(arr, 5, 6);
+    radix_sort(arr, n, 6);
 
     for (int i = 0; i < n; i++) {
         cout << arr[i] << ' ';
