@@ -1,10 +1,9 @@
 #include <iostream>
 using namespace std;
 
+int new_arr[100000] = {0, };
 void merge(int arr[], int start_idx, int end_idx) {
     int mid = (start_idx + end_idx) / 2;
-    
-    int new_arr[100000] = {0, };
 
     int idx = 0;
     int i = start_idx;
@@ -44,7 +43,7 @@ void merge_sort(int arr[], int start_idx, int end_idx) {
     }
 
     int mid = (start_idx + end_idx) / 2;
-    
+
     merge_sort(arr, start_idx, mid);
     merge_sort(arr, mid + 1, end_idx);
     merge(arr, start_idx, end_idx);
@@ -63,7 +62,7 @@ int main() {
     merge_sort(arr, 0, n - 1);
 
     for (int i = 0; i < n; i++) {
-        cout << arr[i] << ' ';
+        cout << new_arr[i] << ' ';
     }
 
     return 0;
