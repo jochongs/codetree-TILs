@@ -1,14 +1,14 @@
 #include <iostream>
 using namespace std;
 
+int new_arr[100000] = {0, };
+
 void merge(int arr[], int start_idx, int end_idx) {
     int mid = (start_idx + end_idx) / 2;
 
     int idx = 0;
     int i = start_idx;
     int j = mid + 1;
-
-    int new_arr[100000] = {0, };
 
     while (i <= mid && j <= end_idx) {
         if (arr[i] < arr[j]) {
@@ -63,7 +63,7 @@ int main() {
     merge_sort(arr, 0, n - 1);
 
     for (int i = 0; i < n; i++) {
-        cout << arr[i] << ' ';
+        cout << new_arr[i] << ' ';
     }
 
     return 0;
