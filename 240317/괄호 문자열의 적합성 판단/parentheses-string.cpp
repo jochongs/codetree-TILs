@@ -12,6 +12,8 @@ bool check_bracket(string input_str) {
             if (s.empty()) {
                 return false;
             }
+
+            s.pop();
         }
     }
 
