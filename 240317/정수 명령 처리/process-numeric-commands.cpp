@@ -33,11 +33,14 @@ int main() {
         }
 
         if (command == "pop") {
-            cout << s.pop() << '\n';
+            int top_num = s.top();
+            s.pop();
+            cout << top_num << '\n';
         }
 
         if (command == "top") {
-            cout << s.top() << '\n';
+            int top_num = s.top();
+            cout << top_num << '\n';
         }
     }
 
